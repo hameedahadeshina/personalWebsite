@@ -4,7 +4,7 @@
     <head>
         <meta charset = "utf-8">
         <meta name="viewport" content="width-device-width, initial-scale-1.0">
-        <link rel= "stylesheet" href="./style.css">
+        <link rel= "stylesheet" href="style.css">
         <title>Hameedah Adeshina</title>
     </head>
 
@@ -12,7 +12,7 @@
         <div class ="container">
 
         <div class="nav-container">
-            <ul>
+            <ul class="nav">
                 <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
@@ -20,13 +20,12 @@
             </ul>
         </div>
 
-        <div>
-            <div id="home">
-                <h1 class="home-title">Hi, I'm Hameedah Adeshina</h1>
-                <h2 class="home-description">I'm a <span id="currentAge">20</span> year old student at Toronto Metropolitan University</h2>
+        <div id="home">
+            <div>
+                <h1 class="home-title">Hi, I'm <span class="auto-type"></span></h1>
+                <h2 class="home-description">A <span id="currentAge"></span> year old Computer Science student at Toronto Metropolitan University</h2>
                 <div class="home-button">
-                    <button class="generic-button">View More</button>
-                    <a href="#about"><button>View More</button></a>
+                    <button class="generic-button" onclick=`${window.location.href="#about"}>View More</button>
                 </div>
             </div>
         </div>
@@ -38,51 +37,104 @@
 
             <div class="content-section-2">
                 <h2 class="content-section-title">About Me</h2>
-                <p class="contact-section-text"> I dont know what to put here but we'll put something later lol</p>
+                <div class="content-section-text">
+                    <p>  
+                        I'm a developer, Model UN delegate, book reader, videographer, professional sleeper, Women in STEM enthusiast, 
+                        food lover, TikTok addict and most importantly a 3rd year student at Toronto Metropolitan University.
+                    </p>
+        
+                    <p>  
+                        I am currently a full-time Computer Science student, recently I have been having a lot of fun expanding my 
+                        skills in web development. I am currently seeking internship opportunities for Summer 2023 where I can apply my skills, 
+                        learn some new things and meet new people. My technical skills include Java, Python, HTML & CSS, Javascript, C, 
+                        SQL, Github and Git.  
+                    </p>
+                    <a href=""><button class="generic-button">View Resume</button></a>
+                </div>
             </div>
         </div>
 
         <div id="projects">
+            <!-- Project 1-->
             <h2 class="content-section-title">Projects</h2>
             <div class="project-list">
-
                 <div class="project-item">
                     <div class="project-image-container">
-                    <img class="project-image-thumbnail" src="" alt="project item"/>
+                        <img class="project-image-thumbnail" src="" alt="project item"/>
+                    </div>
+                    <div class="project-text-container">
+                        <h3 class="project-title">Project Name</h3>
+                        <div class="content-section-text">
+                            <p>
+                                Enter Project Description Here
+                            </p>  
+                        </div>
+                        <a href=""><button class="generic-button">View Project</button></a> 
+                    </div>
                 </div>
-                <div>
-                    <h3>Project Name</h3>
-                    <p>project description</p>  
-                    <a href=""><button>View Project</button></a> 
-            
+                <!-- Project 2-->
+                <div class="project-item">
+                    <div class="project-image-container">
+                        <img class="project-image-thumbnail" src="" alt="project item"/>
+                    </div>
+                    <div class="project-text-container">
+                        <h3 class="project-title">Project Name</h3>
+                        <div class="content-section-text">
+                            <p>
+                                Enter Project Description Here
+                            </p>  
+                        </div>
+                        <a href=""><button class="generic-button">View Project</button></a> 
+                    </div>
+                </div>
+                <!-- Project 3-->
+                <div class="project-item">
+                    <div class="project-image-container">
+                        <img class="project-image-thumbnail" src="" alt="project item"/>
+                    </div>
+                    <div class="project-text-container">
+                        <h3 class="project-title">Project Name</h3>
+                        <div class="content-section-text">
+                            <p>
+                                Enter Project Description Here
+                            </p>  
+                        </div>
+                        <a href=""><button class="generic-button">View Project</button></a> 
+                    </div>
                 </div>
             </div>
-            </div>
-        </div>
-
+        </div> 
+        
         <div class="content" id="contact">
-            <div class="content-section-2">
+            <div id="contact-rightpadding" class="content-section-2">
                 <h2 class="content-section-title">Contact Me</h2>
-                <p class="contact-section-text"> I dont know what to put here but we'll put something later lol</p>
+                <div class="contact-section-text">
+                    <p>
+                        Below you can find my LinkedIn, Github, Phone Number and Email
+                    </p>  
+                </div> 
+            </div>
+            <div class="content-section-1">
+                <img class="content-image" src="" alt="Hameedah Adeshina" />
             </div>
         </div>
-    </div>
+        </div>
     </body>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
     <script>
         let currentYear = new Date().getFullYear();
-        let birthYear = 2003;
+        let birthYear = 2002;
 
-        document.getElementId("currentAge").innerHTML = currentYear - birthYear;
+        document.getElementById("currentAge").innerHTML = currentYear - birthYear;
 
-        let typed = new Typed(".auto-type", {
-            strings: ["Hameedah Adeshina", "FrontEnd Developer", "Student"],
-            typeSpeed: 100,
-            backSpeed: 100,
+        let typed = new Typed('.auto-type', {
+            strings: ["^500Hameedah Adeshina^1000", "^500 a Developer^1000", "^500 a Student^1000"],
+            typeSpeed: 80,
+            backSpeed: 40,
             loop: true,
-            showCursor: false,
-        }
-
+            showCursor: true,
+        });
     </script>
 </html>
-
