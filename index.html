@@ -25,28 +25,29 @@
                 <h1 class="home-title">Hi, I'm <span class="auto-type"></span></h1>
                 <h2 class="home-description">A <span id="currentAge"></span> year old Computer Science student at Toronto Metropolitan University</h2>
                 <div class="home-button">
-                    <button class="generic-button" onclick=`${window.location.href="#about"}>View More</button>
+                    <a href="#about"><button class="generic-button">View More</button></a>
+                    <!-- <button class="generic-button" onclick=`${window.location.href="#about"}>View More</button> -->
                 </div>
             </div>
         </div>
 
         <div class="content" id="about">
             <div class="content-section-1">
-                <img class="content-image" src="" alt="Hameedah Adeshina"/>
+                <img class="content-image" src="./images/picOfMe.jpg" alt="Hameedah Adeshina"/>
             </div>
 
             <div class="content-section-2">
                 <h2 class="content-section-title">About Me</h2>
                 <div class="content-section-text">
                     <p>  
-                        I'm a developer, Model UN delegate, book reader, videographer, professional sleeper, Women in STEM enthusiast, 
+                        I'm a developer, Model United Nations delegate, book reader, videographer, red velvet cake connoisseur, professional sleeper, Women in STEM enthusiast, 
                         food lover, TikTok addict and most importantly a 3rd year student at Toronto Metropolitan University.
                     </p>
         
                     <p>  
-                        I am currently a full-time Computer Science student, recently I have been having a lot of fun expanding my 
-                        skills in web development. I am currently seeking internship opportunities for Summer 2023 where I can apply my skills, 
-                        learn some new things and meet new people. My technical skills include Java, Python, HTML & CSS, Javascript, C, 
+                        I am a full-time Computer Science student currently seeking internship opportunities for Summer 2023 
+                        where I can apply my skills, learn some new things and meet new people. Recently I have been having a lot of fun 
+                        expanding my knowledge in web development (that's how I built this website!). My technical skills include Java, Python, HTML & CSS, Javascript, C, 
                         SQL, Github and Git.  
                     </p>
                     <a href=""><button class="generic-button">View Resume</button></a>
@@ -60,46 +61,71 @@
             <div class="project-list">
                 <div class="project-item">
                     <div class="project-image-container">
-                        <img class="project-image-thumbnail" src="" alt="project item"/>
+                        <!-- <img class="project-image-thumbnail" src="./images/portfolioPicture.png" alt="project item"/> -->
                     </div>
                     <div class="project-text-container">
-                        <h3 class="project-title">Project Name</h3>
+                        <h3 class="project-title">Personal Portfolio</h3>
                         <div class="content-section-text">
                             <p>
-                                Enter Project Description Here
+                                Built a personal portfolio website deployed on 
+                                Github using my knowledge in HTML, CSS and Javascript 
+                                that contains information about myself, my resume and 
+                                my projects
                             </p>  
                         </div>
-                        <a href=""><button class="generic-button">View Project</button></a> 
+                        <!-- <a href=""><button class="generic-button">View Project</button></a> -->
                     </div>
                 </div>
                 <!-- Project 2-->
                 <div class="project-item">
                     <div class="project-image-container">
-                        <img class="project-image-thumbnail" src="" alt="project item"/>
+                       <!-- <img class="project-image-thumbnail" src="" alt="project item"/> -->
                     </div>
                     <div class="project-text-container">
-                        <h3 class="project-title">Project Name</h3>
+                        <h3 class="project-title">Project Picture</h3>
                         <div class="content-section-text">
                             <p>
-                                Enter Project Description Here
+                                Programmed a web app using my knowledge in HTML, CSS and Javascript 
+                                that allows users to upload a photo and apply a filter that I created 
+                                to their picture.
                             </p>  
                         </div>
-                        <a href=""><button class="generic-button">View Project</button></a> 
+                        <!-- <a href=""><button class="generic-button">View Project</button></a> -->
                     </div>
                 </div>
                 <!-- Project 3-->
                 <div class="project-item">
                     <div class="project-image-container">
-                        <img class="project-image-thumbnail" src="" alt="project item"/>
+                        <!-- <img class="project-image-thumbnail" src="" alt="project item"/> -->
                     </div>
                     <div class="project-text-container">
-                        <h3 class="project-title">Project Name</h3>
+                        <h3 class="project-title">SmartStylist</h3>
                         <div class="content-section-text">
                             <p>
-                                Enter Project Description Here
+                                Currently developing an application that uses Google Cloud Storage, 
+                                Google Cloud Vision API, Firebase, Python and React to recommend outfit 
+                                pairings from a closet based off of the system’s analysis of a database 
+                                of outfit inspiration pictures.
                             </p>  
                         </div>
-                        <a href=""><button class="generic-button">View Project</button></a> 
+                        <!-- <a href=""><button class="generic-button">View Project</button></a> -->
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-image-container">
+                       <!-- <img class="project-image-thumbnail" src="" alt="project item"/> -->
+                    </div>
+                    <div class="project-text-container">
+                        <h3 class="project-title">Project Euphoria</h3>
+                        <div class="content-section-text">
+                            <p>
+                                Built a web app using knowledge in HTML, CSS and Javascript 
+                                that allows users to view randomized motivational quotes and 
+                                reminders that are organized based off of the user’s current mood.
+                            </p>  
+                        </div>
+                        <!-- <a href=""><button class="generic-button">View Project</button></a> -->
                     </div>
                 </div>
             </div>
@@ -109,13 +135,14 @@
             <div id="contact-rightpadding" class="content-section-2">
                 <h2 class="content-section-title">Contact Me</h2>
                 <div class="contact-section-text">
-                    <p>
-                        Below you can find my LinkedIn, Github, Phone Number and Email
-                    </p>  
+                    <p>Email: hameedahadeshina@gmail.com</p>
+                    <p>Phone: (647)-921-5038</p>
+                    <a href="https://github.com/hameedahadeshina">Github</a>
+                    <a href="https://www.linkedin.com/in/hameedah-adeshina-16b3581a2">LinkedIn</a>
                 </div> 
             </div>
             <div class="content-section-1">
-                <img class="content-image" src="" alt="Hameedah Adeshina" />
+                <!-- <img class="content-image" src="" alt="Hameedah Adeshina" /> -->
             </div>
         </div>
         </div>
